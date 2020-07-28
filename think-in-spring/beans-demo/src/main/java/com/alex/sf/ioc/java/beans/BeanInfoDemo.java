@@ -12,6 +12,7 @@ public class BeanInfoDemo {
         BeanInfo beanInfo = Introspector.getBeanInfo(Person.class, Object.class);
         Stream.of(beanInfo.getPropertyDescriptors()).forEach(propertyDescriptor -> {
             System.out.println(propertyDescriptor);
+
         });
     }
 }
